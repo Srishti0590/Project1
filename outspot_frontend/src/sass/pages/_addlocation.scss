@@ -1,0 +1,115 @@
+.add-location-container {
+  max-width: 65rem;
+}
+
+.coords-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coords-container input,
+.coords-container label {
+  display: block;
+}
+
+.coords-container label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+}
+
+.coords-container input {
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  border-bottom: 0.3rem solid transparent;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #444;
+
+  transition: all 0.35s;
+
+  width: 35%;
+}
+
+.coords-container input:focus {
+  outline: none;
+  border-bottom: 0.3rem solid #caa226;
+}
+
+.btn-coords {
+  border: none;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  font-size: 1rem;
+  background-color: #5b6430;
+  color: #fff;
+}
+
+.btn-coords:hover {
+  background-color: #75813d;
+  color: #fff;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.description-container label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+}
+
+.description-container textarea {
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  border-bottom: 0.3rem solid transparent;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #444;
+
+  transition: all 0.35s;
+
+  width: 100%;
+  min-height: 20rem;
+}
+
+.description-container textarea:focus {
+  outline: none;
+  border-bottom: 0.3rem solid #caa226;
+}
+
+.btn--add-spot {
+  align-self: flex-start;
+  padding: 1.4rem 3rem;
+  font-size: 1.8rem !important;
+  background-color: #fcca2f;
+  text-transform: uppercase;
+}
+
+.btn--add-spot:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: #fdd559;
+}
+
+.btn--add-spot:active {
+  transform: translateY(0rem);
+  box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
+  background-color: #fcca2f;
+}

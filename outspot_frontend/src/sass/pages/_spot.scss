@@ -1,0 +1,33 @@
+.spot-img {
+  object-fit: cover;
+  aspect-ratio: 570/364;
+}
+.spot-contents {
+  align-self: center;
+}
+.spot-name {
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  color: $primary-color;
+
+  & a {
+    font-size: 2rem !important;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.spot-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+.spot-address {
+  font-size: 1.6rem;
+  color: #777;
+}

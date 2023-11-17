@@ -1,0 +1,119 @@
+*:focus {
+  outline: none;
+  // box-shadow: 0 0 0 0.35rem $primary-opacity-25;
+}
+::moz-selection {
+  background-color: $secondary-color;
+  color: $white;
+}
+::selection {
+  background-color: $secondary-color;
+  color: $white;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.15;
+}
+.heading-primary {
+  font-size: 4.4rem;
+  color: $white;
+}
+.heading-secondary {
+  font-size: 3.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.para-sm {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $grey1-800;
+  margin-bottom: 3.2rem;
+}
+.para-md {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  justify-content: center;
+  gap: 3.2rem;
+}
+a:link,
+a:visited,
+.btn-custom {
+  display: inline-block;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.35s;
+  text-decoration: none;
+
+  &:disabled {
+    background-color: $grey1-400;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+.btn--big {
+  padding: 1.5rem 4rem;
+}
+.btn--hero {
+  background-color: $grey1-100;
+  color: $grey1-900 !important;
+
+  &:hover {
+    background-color: $white;
+    color: $black-tint-3;
+    transform: scale(1.05);
+  }
+}
+.error-message {
+  color: $error-color;
+  font-size: 1.8rem;
+}
+.icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  margin-bottom: 1.8rem;
+}
+.no-page-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+  font-size: 3.2rem;
+}
+.heading-style {
+  padding-bottom: 1.2rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(117, 129, 61, 0.2);
+}
+.warning-msg {
+  color: #c94848;
+  font-size: 3.2rem;
+  text-align: center;
+  padding-top: 6.4rem;
+  margin-bottom: 22rem;
+}

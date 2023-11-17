@@ -1,0 +1,68 @@
+.message-container {
+  position: absolute;
+  left: 50%;
+  top: 1%;
+  padding: 4.2rem 2.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  border-radius: 1rem;
+
+  box-shadow: 0 1rem 1.5rem rgba($black, 0.15);
+
+  transform: translateX(-50%);
+
+  z-index: 9000;
+}
+.error-message-container {
+  background-color: #ffe3e3;
+}
+.success-message-container {
+  background-color: #d2d6bc;
+}
+
+.message {
+  font-size: 2.4rem;
+  margin: 0;
+  padding: 0;
+
+  &-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+.cross {
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  color: inherit;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+  transform: translateX(-100rem);
+}
+.reveal {
+  animation: revealError 0.5s ease-in forwards;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+@keyframes revealError {
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

@@ -1,0 +1,15 @@
+.btn--signup {
+  padding: 1.4rem 3rem;
+  font-size: 1.8rem;
+  background-color: $secondary-color;
+  text-transform: uppercase;
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+
+    &:active {
+      transform: translateY(0rem);
+      box-shadow: 0 0.15rem 0.5rem rgba($black, 0.15);
+    }
+  }
+}

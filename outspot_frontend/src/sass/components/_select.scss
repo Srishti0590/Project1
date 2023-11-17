@@ -1,0 +1,38 @@
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* align-items: center;
+    justify-content: space-between; */
+}
+
+.control select,
+.control label {
+  display: block;
+}
+
+.control label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.75px;
+}
+
+.control select {
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  border-bottom: 0.3rem solid transparent;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #444;
+
+  width: 100%;
+  transition: all 0.35s;
+}
+
+.control select:focus {
+  outline: none;
+  border-bottom: 0.3rem solid #caa226;
+}

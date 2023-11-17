@@ -1,0 +1,19 @@
+.btn-login {
+  align-self: flex-start;
+  padding: 1.4rem 3rem;
+  font-size: 1.8rem !important;
+  background-color: #fcca2f;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: #fdd559;
+  }
+
+  &:active {
+    transform: translateY(0rem);
+    box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
+    background-color: #fcca2f;
+  }
+}

@@ -1,0 +1,10 @@
+.error-container {
+  min-height: 85vh;
+  justify-content: center;
+  align-items: center;
+
+  .error-message {
+    font-size: 3.2rem;
+    color: $error-color;
+  }
+}

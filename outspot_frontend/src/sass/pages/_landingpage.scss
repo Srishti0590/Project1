@@ -1,0 +1,94 @@
+.landing-content {
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($primary-color, 0.85),
+      rgba($secondary-color, 0.85)
+    ),
+    url(../../assets/Images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing-heading {
+  text-align: center;
+}
+.landing-text {
+  width: 50%;
+}
+.landing-para {
+  color: $white;
+  text-align: center;
+}
+
+// Cta-section
+.cta-section {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 10rem;
+  box-shadow: 0 1rem 2rem rgba($black, 0.15);
+  border-radius: 1.5rem;
+  margin: 4.8rem;
+}
+.para-md {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.cta-action {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  justify-content: center;
+}
+.cta-signup,
+.cta-login {
+  padding: 1.6rem 3.2rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  transition: all 0.35s;
+}
+.cta-signup {
+  background-color: $black-tint-6;
+  color: $white;
+  text-align: center;
+}
+.cta-signup:hover {
+  background-color: $black-tint-5;
+  color: $white;
+}
+.cta-login {
+  background-color: $white;
+}
+.cta-login:hover {
+  background-color: $grey1-300;
+  color: $black;
+}
+.cta-para {
+  font-size: 1.8rem;
+}
+.cta-or {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+@media (max-width: 59em) {
+  .landing-content {
+    width: 80% !important;
+    max-width: 80% !important;
+  }
+}
+@media (max-width: 34em) {
+  .content-container {
+    width: 95% !important;
+    max-width: 95% !important;
+  }
+}
